@@ -1,0 +1,12 @@
+@import "../../../styles/colors.scss";
+
+.component {
+  padding: 10px;
+  background-color: $gray;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

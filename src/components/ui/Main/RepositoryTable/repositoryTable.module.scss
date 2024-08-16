@@ -1,0 +1,66 @@
+@import "../../../../styles/colors.scss";
+
+.component {
+  height: 675px;
+}
+
+.table {
+  display: block;
+  height: 100%;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray1;
+    border-radius: 10px;
+  }
+
+  & thead {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $gray1;
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    & th {
+      text-wrap: nowrap;
+      font-size: 1.4rem;
+
+      &:first-of-type {
+        width: 480px;
+      }
+
+      &:nth-child(2) {
+        width: 120px;
+      }
+    }
+  }
+
+  & tbody {
+    & tr {
+      & td {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+
+      transition: background-color 0.15s ease-in-out;
+
+      &:hover {
+        background-color: $blue-1;
+      }
+    }
+  }
+}
