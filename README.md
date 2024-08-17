@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) Test-App-Gi.
+This is a [Next.js](https://nextjs.org/) Test-App-Gi. => https://test-app-gi.vercel.app/
 
 ## Getting Started
 
